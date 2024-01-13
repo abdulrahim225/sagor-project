@@ -99,11 +99,14 @@ header {
     .title-name{
         font-size: 2.5rem;
     }
+    .banner-container{
+        max-width: 92%;
+    }
     .banner-title{
         max-width: 100%;
     }
     .banner-title-name{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .banner-description{
         font-size: 0.8rem;
