@@ -85,6 +85,27 @@ header {
     background-color: #aa5b00;
     color: lightsalmon;
 }
+/* Container parts related */
+main{
+    max-width: 80%;
+    margin: 50px auto;
+}
+.team-container{
+    display: flex;
+    align-items: center;
+
+
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 1.5rem;
+    width: 50%;
+}
+.team-title{
+    padding: 0 61px;
+    width: 45%;
+}
 
 /* Responsive design media query */
 @media screen and (max-width: 480px) {
@@ -116,6 +137,18 @@ header {
         padding: 18px;
         margin-bottom: 34px;
     }
+    .team-container{
+        flex-direction: column;
+    }
+    .team-img{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .team-title{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
 }
 @media screen and  (min-width: 480px) and (max-width:767px) {
     header{
@@ -140,4 +173,16 @@ header {
         padding: 18px;
         margin-bottom: 34px;
     }
-}
+
+.team-container{
+        flex-direction: column;
+    }
+    .team-img{
+        grid-template-columns: repeat(2 , 1fr);
+        width: 100%;
+    }
+    .team-title{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }}
