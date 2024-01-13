@@ -1,7 +1,54 @@
 /* font work sense link */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Style related css */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
+}
+header {
+    background: rgba(255, 144, 14, 0.1);
+}
+.menubar-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#icon-menu {
+    display: none;
+    list-style: none;
+}
+.title-name {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.menubar-list{
+    list-style: none;
+    display: flex;
+    justify-content:end;
+    gap: 3rem;
+}
+.menubar-list  li{
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+.menubar-list  li  a{
+    text-decoration: none;
+    transition: 0.8s;
+}
+.menubar-list  li a:hover{
+    color: rgb(45, 148, 0);
+}
+
+/* Responsive design media query */
+@media screen and (max-width: 480px) {
+    .menubar-container{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
